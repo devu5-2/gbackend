@@ -128,8 +128,8 @@ store.on("error", function (error) {
 });
 
 const port = process.env.PORT;
-const c_id = process.env.clientID;
-const c_sec = process.env.clientS;
+const c_id = process.env.clientid;
+const c_sec = process.env.clients;
 
 app.use(
   cors({
