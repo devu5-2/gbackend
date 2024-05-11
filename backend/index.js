@@ -14,7 +14,7 @@ const c_sec=process.env.clientS
 
 
 app.use(cors({
-    origin:"http://localhost:3002",
+    origin:"https://google-login-psi.vercel.app",
     methods:"GET,POST,PUT,DELETE",
     credentials:true
 }));
