@@ -159,7 +159,7 @@ passport.use(
     {
       clientID: c_id,
       clientSecret: c_sec,
-      callbackURL: "/auth/google/callback",
+      callbackURL: "https://google-back.vercel.app/auth/google/callback",
       scope: ["profile", "email"],
     },
     async (accessToken, refreshToken, profile, done) => {
