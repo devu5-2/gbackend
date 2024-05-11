@@ -7,7 +7,7 @@ const session = require("express-session");
 const passport = require("passport");
 const OAuth2Strategy = require("passport-google-oauth2").Strategy;
 const userdb = require("./model/userSchema")
-PORT=6005
+const port=process.env.PORT
 const c_id= process.env.clientID
 const c_sec=process.env.clientS
 
@@ -94,8 +94,8 @@ app.get("/logout",(req,res,next)=>{
     })
 })
 
-app.listen(PORT,()=>{
-    console.log(`SERVER STARTED AT PORT ${PORT}`)
+app.listen(port,()=>{
+    console.log(`SERVER STARTED AT PORT ${port}`)
 })
 
 
