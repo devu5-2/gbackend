@@ -201,7 +201,7 @@ app.get(
   "/auth/google/callback",
   passport.authenticate("google", {
     successRedirect: "https://google-login-psi.vercel.app/homepage",
-    failureRedirect: "https://google-login-psi.vercel.app",
+    failureRedirect: "https://google-login-psi.vercel.app/",
   })
 );
 
