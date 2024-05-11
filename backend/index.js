@@ -97,3 +97,6 @@ app.get("/logout",(req,res,next)=>{
 app.listen(PORT,()=>{
     console.log(`SERVER STARTED AT PORT ${PORT}`)
 })
+
+
+module.exports = app;
