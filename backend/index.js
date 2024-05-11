@@ -200,8 +200,8 @@ app.get("/auth/google", passport.authenticate("google", { scope: ["profile", "em
 app.get(
   "/auth/google/callback",
   passport.authenticate("google", {
-    successRedirect: "http://localhost:3002/homepage",
-    failureRedirect: "http://localhost:3002/",
+    successRedirect: "https://google-login-psi.vercel.app/homepage",
+    failureRedirect: "https://google-login-psi.vercel.app/",
   })
 );
 
@@ -218,7 +218,7 @@ app.get("/logout", (req, res, next) => {
     if (err) {
       return next(err);
     }
-    res.redirect("http://localhost:3002/");
+    res.redirect("https://google-login-psi.vercel.app//");
   });
 });
 
